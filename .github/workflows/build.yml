@@ -17,7 +17,7 @@ jobs:
         id: get-version
         run: |
           # version=$(curl -s 'https://api.github.com/repos/1Panel-dev/1Panel/releases/latest' | jq -r ".tag_name")
-          version="v1.10.33-lts"
+          version="v1.10.34-lts"
           echo "Current Version: ${version}"
           if [ -z "${version}" ] || [ "${version}" == "null" ]; then
             echo "Failed to get version"
